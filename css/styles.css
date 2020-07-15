@@ -249,6 +249,12 @@ summary {
   display: list-item;
 }
 
+.features__list, .job-direction__list, .container-teams__list, .staff-social__list {
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+}
+
 img {
   display: block;
 }
@@ -486,6 +492,7 @@ header {
 .features {
   padding-top: 94px;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 .features__title {
@@ -498,7 +505,6 @@ header {
   left: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -547,7 +553,6 @@ header {
 }
 
 .features__subtitle {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -559,7 +564,6 @@ header {
 }
 
 .features__text {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -571,7 +575,7 @@ header {
 
 /* -------------------------------------------------------end section features------------------------------------------------------ */
 /* ------------------------------------------------------Job direction-------------------------------------------------------- */
-.container.job-direction {
+.job-direction {
   padding-top: 94px;
   padding-bottom: 94px;
   font-family: "Roboto", sans-serif;
@@ -644,6 +648,7 @@ header {
   font-style: normal;
   letter-spacing: 0.03em;
   background: #F5F4FA;
+  text-align: center;
 }
 
 .container-teams__title {
@@ -684,7 +689,6 @@ header {
   font-size: 16px;
   line-height: 1.19;
   color: #212121;
-  text-align: center;
   padding-top: 30px;
 }
 
@@ -693,11 +697,10 @@ header {
   font-size: 16px;
   line-height: 1.19;
   color: #757575;
-  text-align: center;
   margin-top: 10px;
 }
 
-.staff-social {
+.staff-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,16 +731,7 @@ header {
   cursor: grab;
 }
 
-.staff-social__icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.staff-social__link:hover,
-.staff-social__link:focus {
+.staff-social__link:hover, .staff-social__link:focus {
   background-color: #2196F3;
 }
 
@@ -746,8 +740,16 @@ header {
   fill: #ffffff;
 }
 
+.staff-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ------------------------------------------------------постійні клієнти---------------------------------------------------------- */
-.container.custumers {
+.custumers {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   padding-top: 94px;
