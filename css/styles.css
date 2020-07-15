@@ -800,13 +800,13 @@ header {
   cursor: grab;
 }
 
-.custumers__link:hover,
-.custumers__link:focus {
+.custumers__link:hover, .custumers__linklink:focus {
   border-color: #2196F3;
 }
 
-.custumers__link:hover .custumers__icon,
-.custumers__link:focus .custumers__icon {
+.custumers__link:hover:hover .custumers__icon,
+.custumers__link:hover:focus .custumers__icon, .custumers__linklink:focus:hover .custumers__icon,
+.custumers__linklink:focus:focus .custumers__icon {
   fill: #2196F3;
 }
 
