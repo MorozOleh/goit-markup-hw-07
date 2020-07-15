@@ -1,0 +1,196 @@
+.footer-page{
+  background: #2F303A;
+  max-width:1600px ;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* -------------------------------------------------------footer -------------------------------------------------------------------*/
+
+.footer-area{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 45px;
+  padding-bottom: 28px;
+}
+
+/* ---------------     footer-area-main     ------------- */
+.area-first__link{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.area-first .list{
+  margin-bottom: 9px;
+}
+
+.area-first .list:last-child{
+  margin-bottom: 0px;
+}
+
+
+.area-second{
+  margin-left: 69px;
+}
+
+.address-street{
+  font-family: $font-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71 ;
+  letter-spacing: 0.03em;
+  color: $primary-white-color;
+}
+
+.address-footer a {
+  display: block;
+  color:$secondary-color;
+  font-family:$font-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.address-footer a:hover,
+.address-footer a:focus {
+ color:$accent-color;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/*-------------------------------------------------------- Join-------------------------------------------------------------------- */
+.area-second__title{
+  margin-bottom: 20px;
+  font-family: $font-text;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  
+}
+
+.footer-socials{
+  display: flex;
+}
+
+.footer-socials__item{
+  margin-right: 10px;
+}
+
+.footer-socials__item:last-child{
+  margin-right: 0;
+}
+
+.footer-socials__link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-socials__link:hover,
+.footer-socials__link:focus{
+  background-color:$accent-color;
+}
+
+.footer-socials__icon{
+  width: 20px;
+  height: 20px;
+}
+
+.footer-socials__icon{
+  fill: $primary-white-color;
+}
+
+/* -----------column-three---------- */
+.area-third__title{
+  font-family: $font-text;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.footer-form{
+  display: flex;
+  align-items: center;
+}
+
+.footer-form__input{
+  max-height: 50px;
+  width: 368px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  color: $primary-white-color;
+}
+
+.footer-form__botton{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  min-width: 200px;
+  max-height: 50px;
+  font-family: $font-text;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color:$accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-origin: border-box;
+}
+
+.footer-form__icon{
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------end------------------------------------------------------------------ */
+.copyright {
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: $font-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top:  18px;
+  padding-bottom: 21px;
+}
+/* -----------------------------------------------------end index.html----------------------------------------------------------- */
