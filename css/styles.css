@@ -249,7 +249,7 @@ summary {
   display: list-item;
 }
 
-.site-nav, .address-nav, .features__list, .job-direction__list, .container-teams__list, .staff-social__list, .buttons__list, .portfolio__list, .address-footer, .footer-socials {
+.site-nav, .address-nav, .features__list, .job-direction__list, .container-teams__list, .staff-social__list, .custumers__list, .buttons__list, .portfolio__list, .address-footer, .footer-socials {
   padding: 0px;
   margin: 0;
   list-style: none;
