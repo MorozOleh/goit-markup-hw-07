@@ -69,11 +69,11 @@
   @extend %list
 }
 
-.portfolio__link{
+.product__link{
   display: block;
   text-decoration: none;
 
-  &:hover .container-position{
+  &:hover .product__position{
     transform:translateY(0);
     opacity: 1;
 }
@@ -107,17 +107,17 @@
 
 }
 
-.portfolio-set{
+.product__container{
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-set__icon{
+.product__icon{
   width: 370px;
   height: 294px;
 }
 
-.container-position{
+.product__position{
   position: absolute;
   content: "";
   width: 100%;
@@ -130,7 +130,7 @@
   opacity: 0;
 }
 
-.container-position__kryak{
+.product__position__kryak{
   width: 100%;
   padding-top: 63px; 
   padding-bottom: 63px;
@@ -145,14 +145,14 @@
  }
 
 
-.style-card{
+.product__meta{
   padding-top: 20px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
- .style-card__title{
+ .product__title{
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -162,7 +162,7 @@
   margin-bottom: 4px;
  }
 
- .style-card__text{
+ .product__text{
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
