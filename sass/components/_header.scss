@@ -7,7 +7,13 @@ header{
   background-color: #ffffff;
 }
 
-.container > .header-nav{
+.container__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-nav{
   display: flex;
   align-items: center;
 }
@@ -28,17 +34,14 @@ header{
   color:$accent-color;
 }
 
-.logo.inverse{
-  color:$primary-white-color;
-}
 /* ----------------------------------------------------------end logo-------------------------------------------------------------- */
 /* -----------------------------------------------------     site-nav------------------------------------------------------------- */
 
 .site-nav{
+  @extend %list;
   display: flex;
   margin-left: 85px;
 }
-
 
 .site-nav__item + .site-nav__item{
   margin-left: 50px;
@@ -56,13 +59,13 @@ header{
   letter-spacing: 0.02em;
   text-decoration: none;
   position: relative;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
- }
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+  &:hover,
+  &:focus {
   color:$accent-color;
 }
+ }
 
 .site-nav__link--active{
   color:$accent-color;
@@ -78,19 +81,16 @@ header{
   width: 100%;
   border:2px solid $accent-color; 
 }
-
-
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------start address---------------------------------------------------------------- */
-
 .header-address{
   margin-left: auto;
 }
 
 .address-nav {
+  @extend %list;
   display: flex;
-  justify-content: center;
 }
 
 .address-nav__item + .address-nav__item{

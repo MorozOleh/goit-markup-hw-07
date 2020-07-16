@@ -15,30 +15,35 @@
 
   <header>
     <!----------------------------navigation container---------------------------------------->
-    <div class="container">
+    <div class="container container__header">
 
       <nav class="header-nav">
-        <!------------------------------------- logo ------------------------------------------->
         <a href="./index.html" class="logo-link">
           <span class="logo-accent"> Web </span>
           <span> Studio </span>
         </a>
         <!-- -----------------------------------end logo------------------------------------- -->
-
+      
         <!---------------------------------- main navigation ----------------------------------->
-        <ul class="list-style site-nav">
-          <li class=" site-nav__item "> <a class=" site-nav__link site-nav__link--active" href="index.html"> Студія </a>
+        <ul class="site-nav">
+          <li class=" site-nav__item ">
+             <a class=" site-nav__link site-nav__link--active" href="index.html"> Студія </a>
           </li>
-          <li class=" site-nav__item "> <a class=" site-nav__link" href="portfolio.html"> Портфоліо </a></li>
-          <li class=" site-nav__item "> <a class=" site-nav__link" href=""> Контакти </a></li>
+
+          <li class=" site-nav__item ">
+             <a class=" site-nav__link" href="portfolio.html"> Портфоліо </a></li>
+
+          <li class=" site-nav__item ">
+             <a class=" site-nav__link" href=""> Контакти </a></li>
         </ul>
+      </nav>
+
         <!--------------------------------end main navigation---------------------------------  -->
 
         <!---------------------------- address mail and phone ------------------------------------>
 
-
         <address class="header-address">
-          <ul class="list-style address-nav">
+          <ul class="address-nav">
             <li class="address-nav__item"><a href="mailto:info@devstudio.com" class="address-nav__link">
                 <svg class="address-nav__icon-mail">
                   <use href="./images/sprite.svg#icon-mail"></use>
@@ -53,7 +58,7 @@
             </li>
           </ul>
         </address>
-      </nav>
+      
 
       <!-------------------------end address mail and phone----------------------------  -->
 
@@ -442,93 +447,87 @@
 
   </main>
 
+<!---------------------------------------footer--------------------------------------------------->
 
-  <!-- Підвал -->
+<footer class="footer-page">
+  <div class="container footer-area">
+    <!-- logo -->
 
-  <footer class="footer-page">
-    <div class="container footer-area">
-      <!-- logo -->
+    <div class="area-first">
 
-      <div class="area-first">
+      <a href="./index.html" class="logo-link area-first__link">
+        <span class="logo-accent">Web </span>
+        <span class="logo inverse"> Studio </span>
+      </a>
 
-        <a href="./index.html" class="logo-link area-first__link">
-          <span class="logo-accent">Web </span>
-          <span class="logo inverse"> Studio </span>
-        </a>
-
-        <!--Адреси  -->
-        <address>
-          <ul class=" list-style address-footer">
-            <li class="list address"><span class="address-street"> м.Київ,<br /> пр-т Лесі Українки, 26 </span> </li>
-            <li class="list link"><a href="mailto:info@example.com"> info@example.com</a></li>
-            <li class="list link"><a href="tel:+38096111111">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
-
-      </div>
-
-
-      <!-- Долучись до нас в соцмережу -->
-
-      <div class="area-second">
-
-        <p class="area-second__title">Приєднюйтесь</p>
-
-        <ul class="list-style footer-socials">
-          <li class="footer-socials__item"><a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon">
-                <use href="./images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a></li>
-          <li class="footer-socials__item"><a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon">
-                <use href="./images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a></li>
-          <li class="footer-socials__item"><a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon">
-                <use href="./images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a></li>
-          <li class="footer-socials__item"><a href="" class="footer-socials__link">
-              <svg class="footer-socials__icon">
-                <use href="./images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a></li>
+      <!--Адреси  -->
+      <address>
+        <ul class="address-footer">
+          <li class="address-foter__item address"><span class="footer-address__text"> м.Київ,<br /> пр-т Лесі Українки,
+              26 </span> </li>
+          <li class="address-foter__item link"><a href="mailto:info@example.com" class="address-footer__link">
+              info@example.com</a></li>
+          <li class="address-foter__item link"><a href="tel:+38096111111" class="address-footer__link">+38 096 111 11
+              11</a></li>
         </ul>
-      </div>
+      </address>
+
+    </div>
+
+    <!-- Долучись до нас в соцмережу -->
+
+    <div class="area-second">
+
+      <p class="area-second__title">Приєднюйтесь</p>
+
+      <ul class="footer-socials">
+        <li class="footer-socials__item"><a href="" class="footer-socials__link">
+            <svg class="footer-socials__icon">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a></li>
+        <li class="footer-socials__item"><a href="" class="footer-socials__link">
+            <svg class="footer-socials__icon">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a></li>
+        <li class="footer-socials__item"><a href="" class="footer-socials__link">
+            <svg class="footer-socials__icon">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a></li>
+        <li class="footer-socials__item"><a href="" class="footer-socials__link">
+            <svg class="footer-socials__icon">
+              <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a></li>
+      </ul>
+    </div>
 
 
 
-      <div class="area-third">
+    <div class="area-third">
 
-        <p class="area-third__title">Підпишись на розсилку</p>
+      <p class="area-third__title">Підпишись на розсилку</p>
 
-
-        <form>
-          <div class="footer-form"></div>
-          <label for="footer-form__label">
-            <input class="footer-form__input" type=email name="email" placeholder="e-mail">
-          </label>
+      <form class="footer-form">
+        <label for="footer-form__label">
+          <input class="footer-form__input" type=email name="email" placeholder="e-mail">
           <button class="footer-form__botton">
             Підписатися
             <svg class="footer-form__icon">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
           </button>
-      </div>
+        </label>
       </form>
-
     </div>
-    </div>
+  </div>
 
 
+  <p class="copyright">2020 | Developed by GoIt Students</p>
 
-    <p class="copyright">2020 | Developed by GoIt Students</p>
-
-  </footer>
-
-
+</footer>
 
   <script src="./js/modal.js"></script>
 </body>
