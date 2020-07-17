@@ -324,6 +324,10 @@ header {
   line-height: 1.19;
 }
 
+.logo-link--inverse {
+  color: #ffffff;
+}
+
 .logo-accent {
   color: #2196F3;
 }
@@ -1269,10 +1273,6 @@ header {
 
 .address-foter__item:last-child {
   margin-bottom: 0px;
-}
-
-.inverse {
-  color: #ffffff;
 }
 
 .address-footer__link {
