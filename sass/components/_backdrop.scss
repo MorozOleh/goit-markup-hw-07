@@ -28,9 +28,10 @@
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  text-align: center;
 }
 
-.modal_title{
+.modal__title{
   font-family: $font-text;
   font-style: normal;
   font-weight: 700;
@@ -40,7 +41,7 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
   padding-top: 40px;
-  margin-bottom:12px ;
+  margin-bottom: 30px;
 }
 
 
@@ -74,7 +75,6 @@
 .form{
   display: flex;
   flex-direction: column;
-  padding-top: 18px;
 }
 
 .form-field{
@@ -169,6 +169,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
   color: $secondary-color;
 }
 
@@ -203,13 +204,8 @@
   padding-left: 5px;
 }
 
-//-----------------------------------------------button-submit----------------------------------
-.button-field{
-  text-align:center;
-  padding-top: 30px;
-}
 
-.button-field__submit{
+.button-submit{
   display: inline-block;
   padding: 10px 32px;
   border: 1px solid transparent;
