@@ -15,6 +15,7 @@
   pointer-events: none;
 }
 
+//------------------------modal-field-------------------------
 .modal{
   position: absolute;
   top: 50%;
@@ -68,6 +69,7 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+//------------------------------------------------form-field-------------------------------------
 
 .form{
   display: flex;
@@ -86,10 +88,6 @@
     &:last-child{
       margin-bottom: 20px;}
 }
-
-
-
-
 
 
 .form-field__input{
@@ -137,7 +135,6 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-
 .form-field__icon{
   position: absolute;
   width: 18px;
@@ -163,7 +160,7 @@
       border-color:$accent-color;}
 }
 
-
+//----------------------------------------------checkbox-field-----------------------------------------
 .checkbox-field{
   display: flex;
   align-items: center;
@@ -174,7 +171,6 @@
   letter-spacing: 0.03em;
   color: $secondary-color;
 }
-
 
 .checkbox-field__icon{
   width: 16px;
@@ -207,7 +203,7 @@
   padding-left: 5px;
 }
 
-
+//-----------------------------------------------button-submit----------------------------------
 .button-field{
   text-align:center;
   padding-top: 30px;
