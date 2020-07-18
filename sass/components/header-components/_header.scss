@@ -1,0 +1,21 @@
+//------------------------Position-header-----------------
+header{
+  position: fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  z-index: 10;
+  background-color: #ffffff;
+}
+//----------------------location of elemens in header------
+
+.container__header{
+  @include centeredFlex();
+}
+//----------------------location of elements in navigation
+
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+

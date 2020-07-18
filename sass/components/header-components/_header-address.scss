@@ -1,0 +1,50 @@
+//---------------------header-address---------------------
+.header-address{
+  margin-left: auto;
+}
+
+.address-nav {
+  @extend %list;
+  display: flex;
+}
+
+.address-nav__item + .address-nav__item{
+  margin-left: 50px;
+}
+
+.address-nav__link{
+  display: flex;
+  align-items: center;
+  font-family:$font-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color:$secondary-color;
+  text-decoration: none;
+  @include transitionDurationTaming();
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+    &:hover,
+    &:focus{
+      color:$accent-color;
+}
+}
+
+.address-nav__icon-mail{ 
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill:currentColor;
+}
+
+.address-nav__icon-phone{
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill:currentColor;
+}
+
+//---------------------------address-header__end---------

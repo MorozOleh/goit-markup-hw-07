@@ -3,7 +3,10 @@
 @import"./utils/placeholders";
 @import"./utils/mixins";
 @import"./base/utilities";
-@import"./components/header";
+@import"./components/header-components/header";
+@import"./components/header-components/logo";
+@import'./components/header-components/site-nav';
+@import'./components/header-components/header-address';
 @import"./components/studio-main";
 @import"./components/backdrop";
 @import"./components/portfolio";

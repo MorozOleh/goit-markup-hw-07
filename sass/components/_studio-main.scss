@@ -6,9 +6,9 @@
 .banner{
   text-align: center;
   font-family:$font-text;
-  letter-spacing: 0.06em;
   font-style: normal;
   color:$primary-white-color;
+  letter-spacing: 0.06em;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -33,9 +33,9 @@
       .banner__botton{
         display: inline-block;
         padding: 10px 32px;
-        // text-transform: capitalize;
         border: 1px solid transparent;
         @include borderedRadius();
+        @include transitionDurationTaming();
         min-width: 200px;
         color:$primary-white-color;
         background: $accent-color;
@@ -43,9 +43,7 @@
         font-size: 16px;
         line-height: 1.87;
         text-decoration: none;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
           &:hover,
           &:focus{
@@ -100,13 +98,11 @@
         }
       
         .style{
-          display: inline-flex;
-          justify-content:center;
-          align-items: center;
+          @include centeredFlex();
+          @include borderedRadius();
           width: 270px;
           height: 120px;
           background-color: #F5F4FA;;
-          @include borderedRadius();
           margin-bottom: 30px;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -123,8 +119,8 @@
               letter-spacing: 0.03em;
               text-transform: uppercase;
               color: $primary-text-color;
-              margin-bottom: 10px;
               text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              margin-bottom: 10px;
             }
 
               .features__text{
@@ -150,10 +146,10 @@
 }
 
   .job-direction__title {
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em; 
     color: $primary-text-color;
     margin-bottom: 50px;
@@ -195,8 +191,8 @@
               }
 
                 .job-direction__text{
-                  padding: 27px 82px;
                   text-align: center;
+                  padding: 27px 82px;
                   font-weight: 700;
                   font-size: 14px;
                   line-height: 1.15;
@@ -234,7 +230,10 @@
 
       .container-teams__item{
         margin-right: 30px;
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+        box-shadow: 
+        0px 2px 1px rgba(0, 0, 0, 0.2), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px rgba(0, 0, 0, 0.12);
         background-color: $primary-white-color;
         border-bottom-right-radius:4px ;
         border-bottom-left-radius: 4px;
@@ -277,13 +276,14 @@
 
 
 .staff-social__link{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  @include centeredFlex ( $justify : space-around);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitionDurationTaming();
   cursor: grab;
 
   &:hover,
@@ -316,8 +316,8 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em; 
+  text-align: center;
   color: $primary-text-color;
   margin-bottom: 50px;
 }
@@ -337,26 +337,28 @@
 
 .custumers__link{
   @include centeredFlex ();
+  @include borderedRadius();
+  @include transitionDurationTaming();
   border: 1px solid #AFB1B8;
-  border-radius: 4px;
   width: 170px;
   height: 90px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: grab;
+  // transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // border-radius: 4px;
 
     &:hover,
     &link:focus{
-     border-color: $accent-color;
+     border-color: $accent-color;}
 
       &:hover .custumers__icon,
       &:focus .custumers__icon{
        fill:$accent-color;}  
-}
+
 }
  
       .custumers__icon{
         fill:#afb1b8;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        @include transitionDurationTaming();
       }
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 

@@ -1,10 +1,16 @@
-@mixin centeredFlex ($type: flex ) {
+@mixin centeredFlex ($type: flex, $justify: center, $align: center) {
   display: $type;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
   
 }
 
-@mixin borderedRadius($value: 4px){
+@mixin borderedRadius( $value: 4px ){
   border-radius: $value;
+}
+
+@mixin transitionDurationTaming ($duration: 250ms, $cubic:cubic-bezier(0.4, 0, 0.2, 1)){
+  transition-duration: $duration;
+  transition-timing-function: $cubic;
+  
 }
